@@ -1,0 +1,120 @@
+@import '../../scss/helpers/_colors';
+@import '../../scss/helpers/_typography';
+@import '../../scss/theme';
+
+button {
+    @include button-text-style;
+    padding: 12px 24px;
+    margin: 8px; 
+
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: var(--button-background-color);
+    color: var(--button-color);
+    transition: background-color 0.3s, transform 0.3s;
+
+        
+    :focus, :active {
+        box-shadow: $dp06;
+        background-color: $surface-grey;
+    }
+
+    &:hover {
+        background-color: var(--button-hover-color);
+    }
+
+    &:disabled {
+        border: 1px 1px 1px 1px; 
+        border-color: $S-10;
+        color: var(--button-disabled-color);
+        cursor: not-allowed;
+    }
+
+    &.filled {
+        border: none;
+    
+        &:hover {
+            box-shadow: $dp02;
+        }
+    }
+  
+    &.outlined {
+        border: 1px 1px 1px 1px;
+        border-color: var(--button-border-color); 
+
+        &:hover {
+            background-color: var(--button-hover-color);
+        }
+    }
+  
+    &.text {
+        background-color: transparent;
+        border: none;
+        
+        &:disabled {
+            border: none;
+        }
+
+        &:hover {
+            background-color: var(--button-hover-color);
+        }
+    }
+
+    //primary button
+
+    &.primary {
+        background-color: $primary-500;
+        color: var(--button-primary-color);
+
+        :focus, :active {
+            box-shadow: $dp06;
+            background-color: $surface-grey;
+        }
+    
+        &:hover {
+            background-color: $primary-600 !important;
+        }
+    
+        &:disabled {
+            border: 1px 1px 1px 1px; 
+            border-color: $S-10;
+            color: var(--button-disabled-color);
+            cursor: not-allowed;
+            background-color: $S-20;
+        }
+    
+        &.filled {
+            border: none;
+        
+            &:hover {
+                box-shadow: $dp02;
+            }
+        }
+      
+        &.outlined {
+            border: 1px 1px 1px 1px;
+            border-color: var(--button-border-color); 
+    
+            &:hover {
+                background-color: var(--button-hover-color);
+            }
+        }
+      
+        &.text {
+            background-color: transparent;
+            border: none;
+            color: $text-Primary-100;
+            
+            &:disabled {
+                border: none;
+                color: var(--button-disabled-color);
+            }
+    
+            &:hover {
+                background-color: var(--button-hover-color);
+                color: $text-Dark-100;
+            }
+        }
+    }
+}
+  

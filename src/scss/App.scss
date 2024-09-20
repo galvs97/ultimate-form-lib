@@ -1,0 +1,11 @@
+@import '_theme';
+
+body {
+    background-color: var(--background-color);
+    color: var(--color);
+    overscroll-behavior: none;
+  
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }

@@ -1,0 +1,79 @@
+
+$surface-white: #FFFFFF;
+$surface-dark: #121212;
+$surface-grey: #F7F7F7;
+$surface-light: #EEEEEE;
+
+$primary-050: #FFE9D2;
+$primary-100: #FFCF9F;
+$primary-200: #FFB367;
+$primary-300: #FFA245;
+$primary-400: #FF9933;
+$primary-500: #FF7F00;
+$primary-600: #E67300;
+$primary-700: #CC6600;
+$primary-800: #B35900;
+$primary-900: #A55200;
+
+$accent-050: #F7F7F7;
+$accent-100: #EDEDED;
+$accent-200: #E3E3E3;
+$accent-300: #D1D1D1;
+$accent-400: #ABABAB;
+$accent-500: #8A8A8A;
+$accent-600: #636363;
+$accent-700: #4F4F4F;
+$accent-800: #333333;
+$accent-900: #121212;
+
+$alert-red: #FF5559;
+$alert-yellow: #FEDA00;
+$alert-green: #4BE777;
+
+// Gerando variáveis de transparência para $primary-500
+$P-90: rgba($primary-500, 0.9);
+$P-80: rgba($primary-500, 0.8);
+$P-70: rgba($primary-500, 0.7);
+$P-60: rgba($primary-500, 0.6);
+$P-50: rgba($primary-500, 0.5);
+$P-40: rgba($primary-500, 0.4);
+$P-30: rgba($primary-500, 0.3);
+$P-20: rgba($primary-500, 0.2);
+$P-10: rgba($primary-500, 0.1);
+$P-05: rgba($primary-500, 0.05);
+
+// Gerando variáveis de transparência para $accent-900
+$S-90: rgba($accent-900, 0.9);
+$S-80: rgba($accent-900, 0.8);
+$S-70: rgba($accent-900, 0.7);
+$S-60: rgba($accent-900, 0.6);
+$S-50: rgba($accent-900, 0.5);
+$S-40: rgba($accent-900, 0.4);
+$S-30: rgba($accent-900, 0.3);
+$S-20: rgba($accent-900, 0.2);
+$S-10: rgba($accent-900, 0.1);
+$S-05: rgba($accent-900, 0.05);
+
+// Gerando variáveis de transparência para $surface-white
+$white-90: rgba($surface-white, 0.9);
+$white-80: rgba($surface-white, 0.8);
+$white-70: rgba($surface-white, 0.7);
+$white-60: rgba($surface-white, 0.6);
+$white-50: rgba($surface-white, 0.5);
+$white-40: rgba($surface-white, 0.4);
+$white-30: rgba($surface-white, 0.3);
+$white-20: rgba($surface-white, 0.2);
+$white-10: rgba($surface-white, 0.1);
+$white-05: rgba($surface-white, 0.05);
+
+$text-Light-100: $accent-900; 
+$text-Light-70: rgba($accent-900, 0.7);
+$text-Light-20: rgba($accent-900, 0.2);
+
+$text-Dark-100: $surface-white; 
+$text-Dark-70: rgba($surface-white, 0.7);
+$text-Dark-20: rgba($surface-white, 0.2);
+
+$text-Primary-100: $primary-500; 
+$text-Primary-70: rgba($primary-500, 0.7);
+$text-Primary-20: rgba($primary-500, 0.2);

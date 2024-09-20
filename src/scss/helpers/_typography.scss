@@ -1,0 +1,67 @@
+
+@import 'https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap';
+
+$base: 'Inter'; $secondary: 'sans-serif';
+
+    h1, h2, h3, h4, h5, h6 { font-family: $base, $secondary; }
+
+    h1 {
+        font-size: 96px;
+        line-height: 116px;
+        letter-spacing: -1.5px; 
+    }
+
+    h2 { 
+        font-weight: bold;
+        font-size: 60px;
+        line-height: 72px;
+        letter-spacing: -0.5px; 
+    }
+    h3 { 
+        font-size: 48px;
+        line-height: 59px;
+        letter-spacing: 2%; 
+    }
+    h4 { 
+        font-size: 34px;
+        line-height: 41px;
+        letter-spacing: 0.25px; 
+    }
+    h5 { 
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 29px;
+        letter-spacing: 2%; 
+    }
+    h6 { 
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.15px; 
+    }
+
+    p {
+        line-height: 28px;
+        font-size: 18px;
+        letter-spacing: 0.44px; 
+    }
+
+    @mixin button-text-style {
+        font-family: "Space Mono", monospace;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 24px;
+        letter-spacing: 1.35px;
+        text-transform: uppercase;
+    }
+      
+    button {
+      @include button-text-style;
+    }
+    
+    caption, label {
+        font-family: "Space Mono", monospace;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 2%;
+    }

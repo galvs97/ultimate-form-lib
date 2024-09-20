@@ -1,0 +1,43 @@
+@import './helpers/typography';
+@import './helpers/_colors';
+@import './helpers/_shadow';
+
+
+
+html[data-theme="dark"] {
+    --background-color: #{$surface-dark};
+
+    --button-background-color: transparent;
+    --button-border-color: #{$white-20};
+    --button-color: #{$text-Dark-100};
+    --button-hover-color: #{$white-05};
+    --button-disabled-color: #{$text-Dark-20};
+
+    --button-primary-background-color: transparent;
+    --button-primary-border-color: #{$white-20};
+    --button-primary-color: #{$text-Dark-100};
+    --button-primary-hover-color: #{$white-05};
+    --button-primary-disabled-color: #{$text-Dark-20};
+  
+    --primary-color: #{$primary-500};
+    --secondary-color: #{$primary-400};
+  }
+  
+  html[data-theme="light"] {
+    --background-color: #{$surface-white};
+    --color: #{primary-400};
+
+    --button-background-color: #{$surface-white};
+    --button-border-color: #{$S-20};
+    --button-color: #{$text-Light-100};
+    --button-hover-color: #{$S-10};
+    --button-disabled-color: #{$text-Light-20};
+
+    --button-primary-background-color: #{$primary-500};
+    --button-primary-border-color: #{$P-50};
+    --button-primary-color: #{$text-Dark-100};
+    --button-primary-hover-color: #{$P-50};
+    
+    --primary-color: #{$primary-500};
+    --secondary-color: #{$primary-050};
+  }
